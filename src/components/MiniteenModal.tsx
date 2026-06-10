@@ -11,9 +11,9 @@ export default function MiniteenModal({ character, onClose }: MiniteenModalProps
   if (!character) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/45 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/45 backdrop-blur-md flex items-start sm:items-center justify-center p-3 sm:p-6 transition-all duration-300">
       <div 
-        className="w-full max-w-4xl bg-white/70 backdrop-blur-2xl rounded-[2rem] overflow-hidden relative shadow-2xl border border-white/60 flex flex-col md:flex-row animate-in fade-in zoom-in duration-300 max-h-[90vh] md:max-h-[85vh]"
+        className="w-full max-w-4xl bg-white/70 backdrop-blur-2xl rounded-[2rem] overflow-hidden relative shadow-2xl border border-white/60 flex flex-col md:flex-row animate-in fade-in zoom-in duration-300 my-auto max-h-none md:max-h-[85vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -27,7 +27,7 @@ export default function MiniteenModal({ character, onClose }: MiniteenModalProps
 
         {/* Left Side: Avatar Panel with character Color theme */}
         <div 
-          className="w-full md:w-5/12 aspect-square md:aspect-auto min-h-[300px] md:min-h-[500px] flex flex-col items-center justify-center relative overflow-hidden bg-slate-150"
+          className="w-full md:w-5/12 aspect-square md:aspect-auto min-h-[250px] sm:min-h-[300px] md:min-h-[500px] flex flex-col items-center justify-center relative overflow-hidden bg-slate-150"
           style={{ background: character.photoGradient }}
         >
           {character.photoUrl ? (

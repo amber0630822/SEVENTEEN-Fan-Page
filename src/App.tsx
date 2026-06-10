@@ -1144,7 +1144,7 @@ export default function App() {
             className="shimmer-text tracking-normal mb-6 leading-none selection:bg-slate-800 selection:text-white"
             style={{ 
               fontFamily: 'var(--font-bebas)', 
-              fontSize: 'clamp(4.5rem, 15vw, 11rem)', 
+              fontSize: 'clamp(3rem, 12vw, 10rem)', 
               lineHeight: '0.85' 
             }}
           >
@@ -2845,7 +2845,7 @@ export default function App() {
       {/* 1. Inline Video Player Modal */}
       {activeVideo && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/80 backdrop-blur-sm animate-fade-in">
-          <div className={`relative w-full ${activeVideo.playlist && activeVideo.playlist.length > 1 ? 'max-w-5xl' : 'max-w-4xl'} bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col`}>
+          <div className={`relative w-full ${activeVideo.playlist && activeVideo.playlist.length > 1 ? 'max-w-5xl' : 'max-w-4xl'} bg-slate-900 border border-white/10 rounded-3xl md:overflow-hidden overflow-y-auto shadow-2xl flex flex-col max-h-[96vh] md:max-h-[88vh] my-auto`}>
             
             {/* Header */}
             <div className="flex items-center justify-between p-4 bg-slate-950 border-b border-white/5">
