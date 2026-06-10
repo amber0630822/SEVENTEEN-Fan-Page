@@ -1,0 +1,6 @@
+{
+  "name": "MINITEEN",
+  "description": "An elegant, interactive fan hub for SEVENTEEN (SVT) with Rose Quartz & Serenity theme, member directory, interactive lightstick, and custom audio mockup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
